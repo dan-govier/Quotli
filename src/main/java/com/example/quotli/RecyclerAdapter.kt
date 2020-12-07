@@ -34,8 +34,8 @@ class RecyclerAdapter (private var sources: List<String>, private var quotes: Li
 
     override fun onBindViewHolder(holder: RecyclerAdapter.ViewHolder, position: Int) {
         holder.itemSource.text = sources[position]
-        holder.itemQuote.text = sources[position]
-        holder.itemTags.text = sources[position]
+        holder.itemQuote.text = quotes[position]
+        holder.itemTags.text = tags[position]
 
     }
 

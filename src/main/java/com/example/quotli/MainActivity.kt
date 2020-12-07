@@ -11,12 +11,15 @@ class MainActivity : AppCompatActivity() {
     private var quotesList = mutableListOf<String>()
     private var tagsList = mutableListOf<String>()
 
-    private var rv_recyclerView = findViewById<RecyclerView>(R.id.rv_recyclerView)
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        var rv_recyclerView = findViewById<RecyclerView>(R.id.rv_recyclerView)
+
 
         postExamples()
 
@@ -33,7 +36,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun postExamples() {
-        for (i in 1..5) {
+        for (i in 1..10) {
             addToList("Source $i", "Quote $i", "Tags $i")
         }
     }
