@@ -7,7 +7,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 
-class RecyclerAdapter (private var sources: List<String>, private var quotes: List<String>, private var tags: List<String>) : RecyclerView.Adapter<RecyclerAdapter.ViewHolder>(){
+class RecyclerAdapter (private var quotations: List<Quotation>) : RecyclerView.Adapter<RecyclerAdapter.ViewHolder>(){
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
         val itemSource: TextView = itemView.findViewById(R.id.tv_source)
@@ -33,13 +33,13 @@ class RecyclerAdapter (private var sources: List<String>, private var quotes: Li
     }
 
     override fun onBindViewHolder(holder: RecyclerAdapter.ViewHolder, position: Int) {
-        holder.itemSource.text = sources[position]
-        holder.itemQuote.text = quotes[position]
-        holder.itemTags.text = tags[position]
+        holder.itemSource.text = quotations[position].source
+        holder.itemQuote.text = quotations[position].quotation
+        holder.itemTags.text = quotations[position].getTagsAsSingleString()
 
     }
 
     override fun getItemCount(): Int {
-        return sources.size
+        return quotations.size
     }
 }

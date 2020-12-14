@@ -6,6 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+<!--    android:theme="@style/ThemeOverlay.AppCompat.ActionBar"-->
+<!--    app:popupTheme="@style/ThemeOverlay.AppCompat"-->
+
     <TextView
         android:id="@+id/tv_tagsLabel"
         android:layout_width="wrap_content"
