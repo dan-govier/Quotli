@@ -2,5 +2,17 @@
     <string name="app_name">Quotli</string>
     <string name="tagsLabel">🏷️</string>
     <string name="sourceLabel">🗣️</string>
-    <string name="add_a_quotation">Add a quotation</string>
+    <!--    <string name="add_a_quotation">Add a quotation</string>-->
+    <string name="action_addQuotation">Add a quotation</string>
+    <string name="sourceNameHint">The name of the source.</string>
+    <string name="quotationInputHint">Enter the quotation itself here.</string>
+    <string name="tagsInputHint">Tags for labeling this quotation.</string>
+    <string name="sourceIcon">🗣</string>
+    <string name="scrollIcon">📜</string>
+    <string name="tagsIcon">🏷️</string>
+    <string name="source_name">Source Name</string>
+    <string name="tags">Tags...</string>
+    <string name="text_placeholder">text placeholder</string>
+    <string name="action_confirmEntry">confirm_entry</string>
+    <string name="action_editEntry">edit_entry</string>
 </resources>

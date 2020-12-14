@@ -22,6 +22,9 @@ class RecyclerAdapter (private var quotations: List<Quotation>) : RecyclerView.A
                     "You clicked on item # ${position + 1}",
                     Toast.LENGTH_SHORT
                 ).show()
+
+//                val intent = Intent(this, AddQuotationActivity::class.java)
+//                startActivityForResult(intent, 0)
             }
 
         }

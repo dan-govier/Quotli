@@ -1,11 +1,13 @@
 package com.example.quotli
 
-class Quotation(var source: String,var quotation: String, private var tags: List<String>) {
+import java.io.Serializable
 
-    fun getTagsAsSingleString(): String {
-        return tags.joinToString(
-                limit = 3,
-                truncated = "..."
+class Quotation(var source: String?, var quotation: String?, private var tags: List<String>?) : Serializable {
+
+    fun getTagsAsSingleString(): String? {
+        return tags?.joinToString(
+            limit = 3,
+            truncated = "..."
         )
     }
 }
